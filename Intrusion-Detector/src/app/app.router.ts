@@ -9,7 +9,6 @@ import { LoginComponent } from './login/login.component';
 
 export const router:Routes = [
     {path:'', redirectTo:'home', pathMatch:'full'}, //for empty path
-    {path: '**', redirectTo: '/home', pathMatch: 'full'},//for fallback
     {path:'home', component:HomeComponent},
     {path:'object', component:ObjectComponent},
     {path:'cameras', component:CamerasComponent},
