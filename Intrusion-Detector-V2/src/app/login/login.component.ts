@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeComponent } from '../home/home.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
@@ -22,7 +24,8 @@ export class LoginComponent implements OnInit {
   
   formSubmit() {
     if(true == this.checkEmail  && true == this.checkPsw) {
-      alert("Login");
+      alert("Login-Go Home page");
+      this.router.navigate(['home/']);
     } else {
       alert("No Login");
     }
