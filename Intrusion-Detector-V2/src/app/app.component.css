@@ -1,0 +1,17 @@
+.footer {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0.15), rgb(0, 0, 0)) repeat;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0 10px 0;
+}
+
+.navbar {
+    box-shadow: 2px 2px 2px 2px #DFE3EE;
+    margin-bottom: 2px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0.15), rgb(0, 0, 0)) repeat;
+}
+
+#nav li a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
