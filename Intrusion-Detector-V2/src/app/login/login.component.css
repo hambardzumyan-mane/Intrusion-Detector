@@ -24,7 +24,7 @@ body {
     box-shadow: 2px 2px 2px 2px rgb(6, 0, 0);
     width: 30%;
     margin-top: 8%;
-    margin-bottom: 8%;
+    margin-bottom: 9%;
     min-width:270px;
     overflow: hidden;
 }
@@ -38,7 +38,7 @@ body {
 
 .textUsernamePassword {
     color:black;
-    margin-bottom:-2%;
+    margin-bottom:5%;
 }
 
 .logText {
@@ -91,12 +91,14 @@ body {
     100% { color: #060000; }
 }
 .alert {
+    color:red;
     width: auto;
     height:auto;
     background-color: rgb(211, 212, 236);
     display: none;
     font-size: 14px;
-    margin-bottom:0;
+    margin-top: -5%;
+    margin-bottom:5%;
     /*position: absolute;
     z-index: 100;
     margin-top:-4%;
