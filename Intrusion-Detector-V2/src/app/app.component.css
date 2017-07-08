@@ -6,12 +6,28 @@
 }
 
 .navbar {
+    font-size: 1.5em;
+    width: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
     box-shadow: 2px 2px 2px 2px #DFE3EE;
     margin-bottom: 2px;
     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0.15), rgb(0, 0, 0)) repeat;
 }
 
-#nav li a:hover {
+.nav-list li a {
     color: rgba(255, 255, 255, 0.8);
+}
+.navbar-header a {
+    color: black;
+}
+.nav-list li:hover {
+    border-radius: 5px;
+    background-color: black;
+}
+.nav-list li:focus {
+    font-size: medium;
+}
+.nav-list li:active {
+    font-size: medium;
 }
 
