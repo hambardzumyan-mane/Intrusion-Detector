@@ -22,8 +22,8 @@ export class LoginComponent implements OnInit {
     "password" : ""
   };
   
-  formSubmit() {
-    if(true == this.checkEmail  && true == this.checkPsw) {
+  private formSubmit(): void { // Do not forgot to define all properties for functiona and don't use default syntax
+    if(true == this.checkEmail  && true == this.checkPsw) { // Why you check boolean valuse to be equal to true ?
       alert("Login-Go Home page");
       this.router.navigate(['home/']);
     } else {
@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
 validateEmail() {
     var regularExpression = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if ("" == this.data.email) {
+        // TODO: Change the functionality and do not use  document.getElementById. Use Angular style code here and not Javascript
         document.getElementById("alertEmail").innerHTML = "Please, fill out this field";
         this.setMyAtributtsForEmail();
         this.checkEmail = false;
@@ -51,6 +52,7 @@ validateEmail() {
 
   validatePassword() {
     var regularExpression = /^(?=.*[0-9])(?=.*[a-z])[a-zA-Z0-9!@#$%^&*]{6,20}$/;
+    // TODO: Change the functionality and do not use  document.getElementById. Use Angular style code here and not Javascript
     if ("" == this.data.password) {
       document.getElementById("alertPsw").innerHTML = "Please, fill out this field";
       this.setMyAtributtsForPassword();
@@ -68,18 +70,21 @@ validateEmail() {
   }
 
   setMyAtributtsForPassword() {
+    // TODO: Change the functionality and do not use  document.getElementById. Use Angular style code here and not Javascript
     document.getElementById("alertPsw").style.display = "block";
     document.getElementById("inputPassword").style.borderColor = "red";
     this.ToggleButton=true;
   }
 
   setMyAtributtsForEmail() {
+    // TODO: Change the functionality and do not use  document.getElementById. Use Angular style code here and not Javascript
     document.getElementById("alertEmail").style.display = "block";
     document.getElementById("inputEmail").style.borderColor = "red";
     this.ToggleButton=true;
   }
 
   validate() {
+     // TODO: Fix. Why you check boolean valuse to be equal to true ?
     if (true == this.checkEmail && true == this.checkPsw) {
         this.ToggleButton=false;
     }
