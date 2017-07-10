@@ -1,6 +1,14 @@
+/*
+TODO: This style you need for all components so its better to put generally
+*/
 body {
     width: 100%;
 }
+
+/*
+TODO: It is good approach to creat your style and not override.
+What happens with height?
+*/
 .global {
     background-image: url("../../images/logImg1.jpg");
     width: 100%;
@@ -17,6 +25,11 @@ body {
     background-image: url("../../images/logImg1.jpg");
 }
 */
+
+/*
+TODO: use coding style formatter to fix the spaces issues
+As I remember we were discussing to have it in center of the screen
+*/
 .login {
     background-color: rgba(230, 231, 255, 0.66);
     opacity: 1;
@@ -29,12 +42,19 @@ body {
     overflow: hidden;
 }
 
+/*
+TODO: This is a bad solution. You override all inputs. Its better to make it page / form specific
+*/
 .input {
     border:solid 1px black;
 }
 .icons {
     background-color: rgba(230, 231, 255, 0);
 }
+
+/*
+TODO: REad the following and fix the rest correspondingly
+*/
 
 .textUsernamePassword {
     color:black;
