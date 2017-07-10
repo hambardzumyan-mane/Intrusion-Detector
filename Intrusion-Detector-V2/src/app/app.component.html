@@ -8,18 +8,18 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav nav-list">
-            <li id="home"> <a routerLink="home"><i class="icon glyphicon glyphicon-home"></i>&nbsp;&nbsp; Home</a></li>
-            <li id="detected"> <a routerLink="object"><i class="icon glyphicon glyphicon-user"></i>&nbsp;&nbsp; Detected Objects</a></li>
-            <li id="cameras"> <a routerLink="cameras"><i class="icon glyphicon glyphicon-camera"></i>&nbsp;&nbsp; Cameras</a></li>
+            <li [routerLinkActive]="['active']" id="home"> <a routerLink="home"><i class="icon glyphicon glyphicon-home"></i>&nbsp;&nbsp; Home</a></li>
+            <li [routerLinkActive]="['active']" id="detected"> <a routerLink="object"><i class="icon glyphicon glyphicon-user"></i>&nbsp;&nbsp; Detected Objects</a></li>
+            <li [routerLinkActive]="['active']" id="cameras"> <a routerLink="cameras"><i class="icon glyphicon glyphicon-camera"></i>&nbsp;&nbsp; Cameras</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right nav-list">
-            <li id="login"> <a routerLink="login" id="log"><i class="icon glyphicon glyphicon-log-in"></i>&nbsp;&nbsp; Log In</a></li>
+            <li [routerLinkActive]="['active']" id="login"> <a routerLink="login" id="log"><i class="icon glyphicon glyphicon-log-in"></i>&nbsp;&nbsp; Log In</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div>
       <router-outlet> </router-outlet>
     </div>
 

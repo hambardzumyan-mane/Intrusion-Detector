@@ -24,10 +24,20 @@
     border-radius: 5px;
     background-color: black;
 }
-.nav-list li:focus {
-    font-size: medium;
-}
 .nav-list li:active {
+    border-radius: 5px;
+    background-color: black;
     font-size: medium;
 }
+.nav-list li:focus {
+    border-radius: 5px;
+    background-color: black;
+    font-size: medium;
+}
+
+.navbar-default .navbar-nav >.active >a {
+    border-radius: 5px;
+    background-color: black;
+}
+
 
